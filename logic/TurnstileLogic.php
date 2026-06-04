@@ -31,6 +31,9 @@ class TurnstileLogic
 
     /**
      * 生成前端验证码HTML
+     * @param array $config 插件配置
+     * @param bool $is_admin 是否后台
+     * @return string HTML+JS
      */
     public function describe($config, $is_admin = false)
     {
@@ -125,6 +128,8 @@ class TurnstileLogic
 
     /**
      * 从配置中获取 widget 参数
+     * @param array $config 插件配置
+     * @return array widget 配置（mode/appearance/size/theme）
      */
     protected function getWidgetParams($config)
     {
@@ -233,8 +238,9 @@ if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderAdminTurnstile);
 } else {
     renderAdminTurnstile();
-}
+};
 </script>
+<script src='/plugins/captcha/collection_captcha/captcha-watchdog.js'></script>
 ";
     }
 
@@ -314,6 +320,7 @@ if (document.readyState === 'loading') {
     renderClientTurnstile();
 }
 </script>
+<script src='/plugins/captcha/collection_captcha/captcha-watchdog.js'></script>
 ";
         }
 
@@ -416,11 +423,13 @@ if (document.readyState === 'loading') {
     renderClientTurnstile();
 }
 </script>
+<script src='/plugins/captcha/collection_captcha/captcha-watchdog.js'></script>
 ";
     }
 
     /**
      * 获取客户端IP
+     * @return string IP 地址
      */
     protected function getClientIp()
     {
@@ -439,6 +448,7 @@ if (document.readyState === 'loading') {
 
     /**
      * 获取主题（适配亮色/暗色）
+     * @return string 主题值（auto/light/dark）
      */
     protected function getTheme()
     {
@@ -447,6 +457,8 @@ if (document.readyState === 'loading') {
 
     /**
      * 写入调试日志
+     * @param string $action 操作描述
+     * @param array $data 附加数据
      */
     protected function writeLog($action, $data = [])
     {

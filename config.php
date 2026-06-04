@@ -7,9 +7,8 @@ return [
     'captcha_type' => [
         'title'   => '验证码类型',
         'type'    => 'select',
-        'value'   => '',
+        'value'   => 'geetest',
         'options' => [
-            ['value' => '',          'label' => '请选择验证码类型'],
             ['value' => 'geetest',   'label' => 'Geetest v4（极验）'],
             ['value' => 'turnstile', 'label' => 'Turnstile（Cloudflare）'],
             ['value' => 'hcaptcha',  'label' => 'hCAPTCHA'],
@@ -19,7 +18,7 @@ return [
 
     // ===== Geetest v4 配置 =====
     'geetest_group' => [
-        'title' => '========== Geetest v4 配置 ==========',
+        'title' => 'Geetest v4 配置',
         'type'  => 'tip',
         'value' => '',
         'size'  => 300,
@@ -41,7 +40,7 @@ return [
 
     // ===== Turnstile 配置 =====
     'turnstile_group' => [
-        'title' => '========== Turnstile（Cloudflare）配置 ==========',
+        'title' => 'Turnstile（Cloudflare）配置',
         'type'  => 'tip',
         'value' => '',
         'size'  => 300,
@@ -96,7 +95,7 @@ return [
 
     // ===== hCAPTCHA 配置 =====
     'hcaptcha_group' => [
-        'title' => '========== hCAPTCHA 配置 ==========',
+        'title' => 'hCAPTCHA 配置',
         'type'  => 'tip',
         'value' => '',
         'size'  => 300,
