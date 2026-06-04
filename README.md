@@ -17,6 +17,13 @@
 - **调试日志**：三种验证码均内置可开关的调试日志，便于排查问题
 - **前台/后台双端支持**：后台管理登录 + 前台用户登录统一适配
 
+## 前端展示
+<img width="1912" height="922" alt="image" src="https://github.com/user-attachments/assets/7e8a76ed-9752-4df2-b700-25e2d96d91f0" />
+<img width="1912" height="922" alt="image" src="https://github.com/user-attachments/assets/076ec2f7-4dd5-4923-a883-b8c9bddd7bb0" />
+<img width="1912" height="922" alt="image" src="https://github.com/user-attachments/assets/26a80ff3-d5ce-4649-91d1-f031c4d0c194" />
+
+
+
 ## 文件结构
 
 ```
